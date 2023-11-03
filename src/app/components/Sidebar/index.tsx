@@ -13,7 +13,7 @@ import { Logo } from './Logo'
 import { NavItem } from './NavItem'
 import UsedSpaceWidget from './UsedSpaceWidget'
 import Profile from './Profile'
-import InputRoot, { InputControl, InputPrefix } from '../Input'
+import { InputControl, InputPrefix, InputRoot } from '../Input'
 export default function Sidebar() {
   return (
     <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8">
