@@ -11,13 +11,10 @@ export function ThemeSwitcher() {
   }, [])
 
   if (!mounted) {
-    console.log('mounted?', mounted)
     return null
   }
 
-  console.log('theme', theme)
   function toggleTheme() {
-    console.log('toggletheme', theme)
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
   return (

@@ -17,7 +17,11 @@ export function Portal({ children, ...props }: PortalProps) {
         className="group z-10 w-[var(--radix-select-trigger-width)] animate-slideDownAndFade overflow-hidden rounded-lg border border-zinc-200 bg-white dark:border-zinc-700 dark:bg-slate-800"
       >
         <ScrollArea.Root className="h-full w-full" type="auto">
-          <Select.Viewport className="max-h-[300px]" asChild>
+          <Select.Viewport
+            className="max-h-[300px]"
+            asChild
+            style={{ overflowY: undefined }}
+          >
             <ScrollArea.Viewport className="h-full w-full overflow-y-scroll">
               {children}
             </ScrollArea.Viewport>
