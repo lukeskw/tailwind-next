@@ -1,6 +1,7 @@
 'use client'
 import {
   ComponentProps,
+  MouseEventHandler,
   createContext,
   useContext,
   useId,
@@ -13,6 +14,7 @@ interface FileInputContextType {
   id: string
   files: File[]
   onFilesSelected: (files: File[], multiple: boolean) => void
+  onFileDelete: (file: File) => void
 }
 
 const FileInputContext = createContext({} as FileInputContextType)
@@ -27,8 +29,16 @@ export function Root(props: RootProps) {
     }
     setFiles(files)
   }
+
+  function onFileDelete(file: File) {
+    setFiles((state) =>
+      state.filter((f) => file.name !== f.name || f.size !== file.size),
+    )
+  }
   return (
-    <FileInputContext.Provider value={{ id, files, onFilesSelected }}>
+    <FileInputContext.Provider
+      value={{ id, files, onFilesSelected, onFileDelete }}
+    >
       <div {...props} />
     </FileInputContext.Provider>
   )
