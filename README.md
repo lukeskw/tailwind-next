@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# UntitledUI
+
+_A simple front-end project to explore TailwindCSS features_
+
+## Project Overview
+
+UntitledUI is a straightforward front-end project created to delve into the world of TailwindCSS and Framer Motion. The project was initiated on Next.js version 13, aiming to create a single-page application with minimal complexity.
+
+## Technologies Used
+
+- Next.js 13
+- TailwindCSS for styling
+- Framer Motion for tab animations
+
+## Features
+
+- Single-page application
+- Dark and light mode toggles
+- Framer Motion integration for animated tab controls
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open your browser and visit [http://localhost:3000/](http://localhost:3000/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How to Use
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Explore the homepage with dark and light mode options.
+2. Interact with animated tabs controlled by Framer Motion.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Dark Mode
 
-## Learn More
+![Screenshot of the dark mode](/src/assets/README/dark.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Light Mode
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot of the light mode](/src/assets/README/light.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Authors
 
-## Deploy on Vercel
+Lucas Porfirio: @lukeskw (https://github.com/lukeskw)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to follow my GitHub for more projects and updates. Thank you for checking out UntitledUI! Happy coding!
